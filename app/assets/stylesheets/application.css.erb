@@ -3,9 +3,11 @@ body {
   padding: 0;
 }
 
+/*TOP SECTION*/
+
 #top {
   height: 400px;
-  background-image: url("http://i.imgur.com/lN6aV0b.jpg");
+  background-image: url(<%= 'sunrise_large.jpg' %>);
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -36,3 +38,10 @@ body {
   width: 180px;
 }
 
+/* TOP SECTION - MOBILE */
+
+@media only screen (max-width: 800px) {
+  #top {
+    background: url(<%= 'sunrise_small.jpg' %>);
+  }
+}
