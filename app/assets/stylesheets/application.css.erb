@@ -1,11 +1,108 @@
-body {
-  margin: 0;
-  padding: 0;
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+body {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 
 /*TOP SECTION*/
 
-#top {
+#first {
   height: 400px;
   background-image: url(<%= 'sunrise_large.jpg' %>);
   background-repeat:no-repeat;
@@ -17,13 +114,16 @@ body {
 }
 
 .welcome {
+
+}
+
+.welcome-text {
+  text-align: center;
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 130%;
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-
-.head-text {
- text-align: center;
 }
 
 .logo {
@@ -36,6 +136,7 @@ body {
   padding-top: 50px;
   height: 180px;
   width: 180px;
+  margin-bottom: 0;
 }
 
 /* TOP SECTION - MOBILE */
@@ -45,3 +146,81 @@ body {
     background: url(<%= 'sunrise_small.jpg' %>);
   }
 }
+
+/* SECOND SECTION */
+
+
+
+/* Make the nav take up the whole body width, and give it some top and bottom margin space */
+
+nav {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Make the list of links take up the whole width of the nav */
+
+nav ul {
+  width: 100%;
+}
+
+nav ul li {
+  width: 20%;
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+}
+
+.tabdemo ul {
+  margin: 0;
+  padding: 0
+}
+
+.tabdemo .tab-content-item { max-width: 1250px }
+
+.my-tabs { margin: 0 auto }
+
+.my-tabs .tab-content-item {
+  padding: 50px;
+  background: #f9f9f9;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  font-size: 19px;
+  line-height: 32px
+}
+
+.my-tabs .tab-menu {
+  margin-bottom: 50px;
+  display: table;
+  width: 100%
+}
+
+.my-tabs li {
+  cursor: pointer;
+  padding: 0 20px;
+  display: table-cell;
+  text-align: center
+}
+
+.my-tabs li:first-of-type { padding-left: 0 }
+
+.my-tabs li:last-of-type { padding-right: 0 }
+
+.my-tabs li a {
+  background-color: #f9f9f9;
+  border-radius: 1px;
+  padding: 20px 40px;
+  display: block
+}
+
+.my-tabs li.active a {
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.33)
+}
+
+.my-tabs li a { text-decoration: none }
