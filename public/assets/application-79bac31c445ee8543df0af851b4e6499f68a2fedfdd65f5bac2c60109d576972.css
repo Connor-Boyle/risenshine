@@ -1,5 +1,3 @@
-//= depend_on_asset "sunrise_large.jpg"
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -108,7 +106,7 @@ body {
 
 #welcome-container {
   height: 400px;
-  background-image: url(<%= asset_path('sunrise_large.jpg') %>);
+  background-image: url(sunrise_large.jpg);
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
