@@ -105,6 +105,19 @@ body {
 
 
 /*TOP SECTION*/
+@media(min-width: 900px){
+  #page-container{
+
+    margin:0 10% 0 10%;
+  }
+}
+
+@media(min-width: 1500px){
+  #page-container{
+
+    margin:0 20% 0 20%;
+  }
+}
 
 #welcome-container {
   height: 400px;
@@ -117,7 +130,7 @@ body {
   background-position:center bottom;
   width:100%;
   position: relative;
-  left: 0px;
+
 }
 
 
@@ -152,24 +165,22 @@ body {
   font-size: 14px;        
 }
 
-.tabs-container nav {
+#tabs-container nav {
   -webkit-overflow-scrolling: touch;
 }
 
 .tabs-menu {
   height: 30px;
   float: left;
-  margin: 10px;
   clear: both;
   list-style-type: none;
   font-family: 'Patrick Hand SC', cursive;
 }
 
 .tabs-menu li {
-  height: 40px;
-  line-height: 40px;
+  line-height: 2em;
   float: left;
-  margin-right: 10px;
+
   background-color: #ccc;
   border-top: 1px solid #d4d4d1;
   border-right: 1px solid #d4d4d1;
@@ -219,11 +230,11 @@ body {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-  .welcome-container{
+  #welcome-container{
     background-image: url("sunrise_small.jpg");
   }
 
-  .tabs-container {
+  #tabs-container {
     width:auto;
   }
 
