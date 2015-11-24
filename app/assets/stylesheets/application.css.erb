@@ -215,9 +215,31 @@ body {
 }
 
 .tab-content {
+    position: relative;
     width: auto;
     padding: 20px;
     display: none;
+}
+
+.tab-content img {
+  display: inline-block;
+  height: auto;
+  width: 40%;
+  float: left;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #tab-1 {
