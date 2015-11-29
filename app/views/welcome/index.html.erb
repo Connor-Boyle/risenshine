@@ -1,7 +1,7 @@
 <div id="page-container">
   <div id="welcome-container">
     <img class="logo-img" src="http://i.imgur.com/dqV0ZWd.png" alt="Rise and Shine logo">
-    <p class="welcome-text">parties that make change...</p>
+    <p class="welcome-text">Party a little differently...</p>
   </div>
 
   <div id="tabs-container">
@@ -35,13 +35,32 @@
       </div>
     </div>
   </div>
+  <main class="container main" role="main">
+    <% if flash.alert %>
+      <div class="messages">
+        <div class="alert alert-danger" role="alert">
+          <%=flash.alert %>
+        </div>
+      </div>
+    <% end %>
+
+    <%if flash.notice %>
+      <div class="messages">
+        <div class="alert alert-success" role="alert">
+          <%=flash.notice %>
+        </div>
+      </div>
+    <% end %>
+
+    <%= yield %>
+  </main>
   <article>
     <form method="post" action="/contact">
       <fieldset>
         <legend>Send us a message</legend>
         <label for="message">Message</label>
         <textarea id="message" name="message" class="form-control"></textarea>
-        <input type="submit" value="Send message">
+        <input type="submit" class="btn btn-success" value="Send!">
       </fieldset>
     </form>
   </article>
